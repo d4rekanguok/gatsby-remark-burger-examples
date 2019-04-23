@@ -27,6 +27,8 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-comments`,
+          `gatsby-remark-spoilers`,
           {
             resolve: `gatsby-remark-images`,
             options: {
