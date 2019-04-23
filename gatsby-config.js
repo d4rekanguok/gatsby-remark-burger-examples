@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `remark-burger examples`,
+    author: `Not Kyle Mathews`,
+    description: `Example use of remark-burger in Gatsby`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      github: 'https://github.com/d4rekanguok/gatsby-remark-burger-examples'
     },
   },
   plugins: [

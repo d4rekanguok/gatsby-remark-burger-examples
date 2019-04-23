@@ -1,3 +1,5 @@
+See `/plugins` to see [`remark-burger`](https://github.com/d4rekanguok/remark-burger) in action
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
