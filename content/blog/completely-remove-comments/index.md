@@ -1,15 +1,8 @@
 ---
 title: Markdown Comments
-date: "2015-05-01T22:12:03.284Z"
 description: "removing comments from remarks"
 ---
+// this comment won't be shown at all //
+<!--This is a HTML comment that is still visible in code-->
 
-// this is a comment //
-<!--This is a HTML comment-->
-
-This is the content of this `.md`:
-
-```md
-// this is a comment //
-<!--This is a HTML comment-->
-```
+There are 2 comments above this paragraphs.

@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,17 +19,21 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+        <p>Raw markdown content: </p>
+        <pre style={{
+          padding: `1rem`,
+          background: `#e2e4e6`,
+          borderRadius: `1rem`,
+          whiteSpace: `pre-wrap`,
+        }}>
+          {post.rawMarkdownBody}
+        </pre>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -80,9 +84,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      rawMarkdownBody
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
         description
       }
     }
